@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 340" width="380" height="340">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C47A"/>
+      <stop offset="40%" stop-color="#C9A84C"/>
+      <stop offset="72%" stop-color="#F5E8C8"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+    <linearGradient id="goldH" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#C9A84C"/>
+      <stop offset="70%" stop-color="#F5E8C8"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="380" height="340" fill="#0D0D0D"/>
+
+  <!-- Outer border -->
+  <rect x="12" y="12" width="356" height="316" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.18"/>
+
+  <!-- Corner brackets -->
+  <path d="M12,38 L12,12 L38,12" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.5"/>
+  <path d="M342,12 L368,12 L368,38" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.5"/>
+  <path d="M12,302 L12,328 L38,328" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.5"/>
+  <path d="M342,328 L368,328 L368,302" fill="none" stroke="#C9A84C" stroke-width="0.9" opacity="0.5"/>
+
+  <!-- ── EMBLEM centered at (190, 105) ── -->
+  <g transform="translate(190,105)">
+    <!-- Outer ring -->
+    <circle cx="0" cy="0" r="56" fill="none" stroke="url(#gold)" stroke-width="0.8" opacity="0.55"/>
+    <!-- Inner ring -->
+    <circle cx="0" cy="0" r="47" fill="none" stroke="url(#gold)" stroke-width="0.35" opacity="0.25"/>
+
+    <!-- Cardinal tick marks -->
+    <line x1="0" y1="-56" x2="0" y2="-47" stroke="#C9A84C" stroke-width="1.4"/>
+    <line x1="56" y1="0" x2="47" y2="0" stroke="#C9A84C" stroke-width="1.4"/>
+    <line x1="0" y1="56" x2="0" y2="47" stroke="#C9A84C" stroke-width="1.4"/>
+    <line x1="-56" y1="0" x2="-47" y2="0" stroke="#C9A84C" stroke-width="1.4"/>
+
+    <!-- Diagonal ticks -->
+    <line x1="39.6" y1="-39.6" x2="33.2" y2="-33.2" stroke="#C9A84C" stroke-width="0.7" opacity="0.4"/>
+    <line x1="39.6" y1="39.6" x2="33.2" y2="33.2" stroke="#C9A84C" stroke-width="0.7" opacity="0.4"/>
+    <line x1="-39.6" y1="39.6" x2="-33.2" y2="33.2" stroke="#C9A84C" stroke-width="0.7" opacity="0.4"/>
+    <line x1="-39.6" y1="-39.6" x2="-33.2" y2="-33.2" stroke="#C9A84C" stroke-width="0.7" opacity="0.4"/>
+
+    <!-- Diamond frame -->
+    <polygon points="0,-40 34,0 0,40 -34,0"
+             fill="rgba(201,168,76,0.04)"
+             stroke="url(#gold)" stroke-width="0.9"
+             filter="url(#glow)"/>
+
+    <!-- Diamond corner ornaments -->
+    <polygon points="0,-43 3,-40 0,-37 -3,-40" fill="#C9A84C"/>
+    <polygon points="37,0 40,3 37,6 34,3" transform="translate(0,-3)" fill="#C9A84C"/>
+    <polygon points="0,37 3,40 0,43 -3,40" fill="#C9A84C"/>
+    <polygon points="-37,0 -34,-3 -37,-6 -40,-3" transform="translate(0,3)" fill="#C9A84C"/>
+
+    <!-- M monogram -->
+    <text x="0" y="12"
+      font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+      font-size="38" font-weight="300"
+      fill="url(#gold)"
+      text-anchor="middle"
+      filter="url(#glow)">M</text>
+  </g>
+
+  <!-- Top ornament rule -->
+  <line x1="80" y1="48" x2="300" y2="48" stroke="url(#goldH)" stroke-width="0.6"/>
+  <polygon points="190,44 193,48 190,52 187,48" fill="#C9A84C" opacity="0.6"/>
+
+  <!-- THE -->
+  <text x="190" y="182"
+    font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+    font-size="12" font-style="italic" font-weight="400"
+    fill="#C9A84C" text-anchor="middle" letter-spacing="8" opacity="0.9">The</text>
+
+  <!-- MERRITT -->
+  <text x="190" y="218"
+    font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+    font-size="44" font-weight="300"
+    fill="url(#gold)" text-anchor="middle" letter-spacing="10"
+    filter="url(#glow)">MERRITT</text>
+
+  <!-- Sub rule -->
+  <line x1="80" y1="228" x2="300" y2="228" stroke="url(#goldH)" stroke-width="0.6" opacity="0.5"/>
+  <polygon points="190,225 192.5,228 190,231 187.5,228" fill="#C9A84C" opacity="0.8"/>
+
+  <!-- COLLECTIONS -->
+  <text x="190" y="252"
+    font-family="'Helvetica Neue', 'Montserrat', sans-serif"
+    font-size="11" font-weight="300"
+    fill="#C9A84C" text-anchor="middle" letter-spacing="9">COLLECTIONS</text>
+
+  <!-- Bottom ornament rule -->
+  <line x1="80" y1="270" x2="300" y2="270" stroke="url(#goldH)" stroke-width="0.6"/>
+  <polygon points="190,267 193,270 190,273 187,270" fill="#C9A84C" opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="190" y="294"
+    font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+    font-size="10" font-style="italic" font-weight="300"
+    fill="#555" text-anchor="middle" letter-spacing="3">Premium Property Management</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 100" width="480" height="100">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C47A"/>
+      <stop offset="40%" stop-color="#C9A84C"/>
+      <stop offset="72%" stop-color="#F5E8C8"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+    <linearGradient id="vline" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C9A84C" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="60%" stop-color="#F5E8C8"/>
+      <stop offset="100%" stop-color="#C9A84C" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="480" height="100" fill="#0D0D0D"/>
+  <rect x="8" y="8" width="464" height="84" fill="none" stroke="#C9A84C" stroke-width="0.4" opacity="0.15"/>
+
+  <!-- Corner brackets -->
+  <path d="M8,22 L8,8 L22,8" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.45"/>
+  <path d="M458,8 L472,8 L472,22" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.45"/>
+  <path d="M8,78 L8,92 L22,92" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.45"/>
+  <path d="M458,92 L472,92 L472,78" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.45"/>
+
+  <!-- Emblem at left, centered vertically at y=50 -->
+  <g transform="translate(58,50)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="url(#gold)" stroke-width="0.7" opacity="0.5"/>
+    <line x1="0" y1="-34" x2="0" y2="-27" stroke="#C9A84C" stroke-width="1.2"/>
+    <line x1="34" y1="0" x2="27" y2="0" stroke="#C9A84C" stroke-width="1.2"/>
+    <line x1="0" y1="34" x2="0" y2="27" stroke="#C9A84C" stroke-width="1.2"/>
+    <line x1="-34" y1="0" x2="-27" y2="0" stroke="#C9A84C" stroke-width="1.2"/>
+    <line x1="24" y1="-24" x2="20" y2="-20" stroke="#C9A84C" stroke-width="0.6" opacity="0.35"/>
+    <line x1="24" y1="24" x2="20" y2="20" stroke="#C9A84C" stroke-width="0.6" opacity="0.35"/>
+    <line x1="-24" y1="24" x2="-20" y2="20" stroke="#C9A84C" stroke-width="0.6" opacity="0.35"/>
+    <line x1="-24" y1="-24" x2="-20" y2="-20" stroke="#C9A84C" stroke-width="0.6" opacity="0.35"/>
+    <polygon points="0,-24 20,0 0,24 -20,0"
+             fill="rgba(201,168,76,0.04)"
+             stroke="url(#gold)" stroke-width="0.8" filter="url(#glow)"/>
+    <polygon points="0,-27 2.5,-24 0,-21 -2.5,-24" fill="#C9A84C"/>
+    <polygon points="20,-2.5 23,0 20,2.5 17,0" fill="#C9A84C"/>
+    <polygon points="0,21 2.5,24 0,27 -2.5,24" fill="#C9A84C"/>
+    <polygon points="-20,-2.5 -17,0 -20,2.5 -23,0" fill="#C9A84C"/>
+    <text x="0" y="8"
+      font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+      font-size="24" font-weight="300"
+      fill="url(#gold)"
+      text-anchor="middle"
+      filter="url(#glow)">M</text>
+  </g>
+
+  <!-- Vertical divider -->
+  <line x1="104" y1="18" x2="104" y2="82" stroke="url(#vline)" stroke-width="0.7"/>
+
+  <!-- Text block -->
+  <g transform="translate(120, 0)">
+    <!-- THE italic -->
+    <text x="0" y="34"
+      font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+      font-size="11" font-style="italic" font-weight="400"
+      fill="#C9A84C" letter-spacing="5" opacity="0.9">The</text>
+
+    <!-- MERRITT -->
+    <text x="-1" y="64"
+      font-family="'Cormorant Garamond', 'Palatino Linotype', Georgia, serif"
+      font-size="34" font-weight="300"
+      fill="url(#gold)" letter-spacing="8"
+      filter="url(#glow)">MERRITT</text>
+
+    <!-- Underline rule -->
+    <line x1="0" y1="70" x2="298" y2="70" stroke="url(#hline)" stroke-width="0.5" opacity="0.5"/>
+
+    <!-- COLLECTIONS -->
+    <text x="0" y="85"
+      font-family="'Helvetica Neue', 'Montserrat', sans-serif"
+      font-size="9.5" font-weight="300"
+      fill="#C9A84C" letter-spacing="8">COLLECTIONS</text>
+  </g>
+</svg>
